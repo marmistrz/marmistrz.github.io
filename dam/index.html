@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Malice of ELFs — Talk</title>
+    <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>A Hitchhiker's Guide to the Distributed Adversarial Model</h1>
+
+        <div class="subtitle">
+                Based on papers I co-authored.
+        </div>
+
+        <div class="box">
+
+                <div class="label">Beholder signatures (CRYPTO'26)</div>
+                The opposite of blind signatures and threshold signatures: prove that you individually know both your secret key and what you have signed.
+
+            <p>
+                <a href="https://eprint.iacr.org/2025/1900" target="_blank">
+                    eprint
+                </a>
+                <!-- &nbsp;·&nbsp;
+                <a href="#" onclick="loadSlidesPreview(); return false;">
+                    youtube talk
+                </a> -->
+            </p>
+
+            <div id="slides-preview" style="margin-top:16px;"></div>
+        </div>
+
+        <div class="box">
+
+            <div class="label">On the Pitfalls of Modeling Individual Knowledge (CCS'26)</div>
+            In the Distributed Adversarial Model, the Multi-Party Random Oracle (MPRO) only models the compression function,
+            and not the variable-length hash. Here, we explain what goes wrong if one assumes the latter is modeled.
+
+            <p>
+                <a href="https://eprint.iacr.org/2025/2268" target="_blank">
+                    eprint
+                </a>
+                <!-- &nbsp;·&nbsp;
+                <a href="#" onclick="loadSlidesPreview(); return false;">
+                    youtube talk
+                </a> -->
+            </p>
+
+            <div id="slides-preview" style="margin-top:16px;"></div>
+        </div>
+
+        <div class="box">
+
+            <div class="label">Strong secret sharing with snitching (CRYPTO'25)</div>
+            Secret sharing with snitching ensured security under full corruption,
+            using blockchain smart contracts to enforce honest behavior. 
+            But what if the adversary also sets up smart contracts of their own?
+
+            <p>
+                <a href="https://eprint.iacr.org/2025/1119" target="_blank">
+                    eprint
+                </a>
+                &nbsp;·&nbsp;
+                <a href="https://youtu.be/QuyfwJCSG7E?t=1100" target="_blank">
+                    crypto'25 talk
+                </a>
+            </p>
+
+            <div id="slides-preview" style="margin-top:16px;"></div>
+        </div>
+
+        <div class="box">
+
+            <div class="label">Secret sharing with snitching (CCS'24)</div>
+            It feels like obtaining secret sharing under full corruption is a hopeless endeavor.
+            In this paper we show that it's actually possible, if the adversary is fragmented and might 
+            consist of multiple factions that might be mutually adversarial.
+
+            <p>
+                <a href="https://eprint.iacr.org/2024/1610" target="_blank">
+                    eprint
+                </a>
+                &nbsp;·&nbsp;
+                <a href="https://www.youtube.com/watch?v=-PrsDF3h9oA" target="_blank">
+                    youtube talk (focus on the construction)
+                </a>
+                <!-- &nbsp;·&nbsp;
+                <a href="https://www.youtube.com/watch?v=-PrsDF3h9oA" target="_blank">
+                    TPMPC talk (focus on MPC-hardness)
+                </a> -->
+            </p>
+
+            <div id="slides-preview" style="margin-top:16px;"></div>
+        </div>
+
+        <div class="footer">
+            This page may be updated over time with additional materials and recordings.
+        </div>
+
+    </div>
+
+
+    <!-- <script>
+        let slidesLoaded = false;
+
+        function loadSlidesPreview() {
+            if (slidesLoaded) return;
+
+            const container = document.getElementById("slides-preview");
+
+            container.innerHTML = `
+    <iframe
+      src="slides.pdf"
+      width="100%"
+      height="600px"
+      style="border:1px solid #ddd; border-radius:8px;">
+    </iframe>
+  `;
+
+            slidesLoaded = true;
+        }
+    </script> -->
+</body>
+
+</html>
