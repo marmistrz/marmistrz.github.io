@@ -19,9 +19,9 @@
 
         <div class="box">
             <div class="label">On the Pitfalls of Modeling Individual Knowledge (CCS'26)</div>
-            It is tempting to model a Merkle-Damgård hash function as a random oracle, but this may go terribly wrong 
-            if the protocol is meant to prevent collusion. We attack two papers (published at CCS'15 and CCS'24) and show how the iterative 
-            structure of the Merkle-Damgård hash can be turned into an attack.
+            It’s tempting to model a Merkle-Damgård hash function as a random oracle, but things can go terribly wrong 
+            if your protocol is meant to prevent collusion. We break two papers (published at CCS'15 and CCS'24) and show how the iterative 
+            structure of Merkle-Damgård hashes can be turned into a full-blown attack.
             <p>
                 <a href="https://eprint.iacr.org/2025/2268" target="_blank">
                     eprint
@@ -32,14 +32,14 @@
                 </a> -->
             </p>
 
-            <div id="slides-preview" style="margin-top:16px;"></div>
+            <div class="slides-preview" style="margin-top:16px;"></div>
         </div>
 
         <div class="box">
             <div class="label">Towards Practical Committee Sizes in YOSO MPC (CRYPTO'26)</div>
-                YOSO MPC provides stellar security guarantees for MPC-on-a-blockchain, 
-                but the committee sizes remained in the several thousands: too large for practical deployments.
-                We bring them down to the order of 100. 
+                YOSO MPC provides stellar security guarantees for MPC on a blockchain, 
+                but committee sizes have historically stayed in the thousands—far too large for practical deployment.
+                We bring them down to around 100. 
             <p>
                 <a href="https://eprint.iacr.org/2026/919" target="_blank">
                     eprint
@@ -50,15 +50,14 @@
                 </a> -->
             </p>
 
-            <div id="slides-preview" style="margin-top:16px;"></div>
+            <div class="slides-preview" style="margin-top:16px;"></div>
         </div>
 
         <div class="box">
 
             <div class="label">Beholder signatures (CRYPTO'26)</div>
-                The opposite of blind signatures and threshold signatures: prove that you individually know both your secret key and what you have signed.
-		This means that the singature may not have obliviously been computed using MPC!
-                This gives us non-interactive proofs of custody and other blockchain applications.
+                Think of this as the opposite of blind signatures and threshold signatures: you prove that you personally know both your secret key and what you signed.
+                This guarantees that the signature wasn't obliviously computed using MPC, unlocking non-interactive proofs of custody and other cool blockchain applications.
 
             <p>
                 <a href="https://eprint.iacr.org/2025/1900" target="_blank">
@@ -70,13 +69,13 @@
                 </a> -->
             </p>
 
-            <div id="slides-preview" style="margin-top:16px;"></div>
+            <div class="slides-preview" style="margin-top:16px;"></div>
         </div>
 
         <div class="box">
             <div class="label">The Malice of ELFs: practical anamorphic-resistant encryption without random oracles (EUROCRYPT'26)</div>
-                Anamorphic encryption promises to end all crypto wars by using ciphertexts as steganographic vessels. 
-                However, this promise falls short once the dictator is allowed to <emph>choose</emph> the encryption scheme adversarially.
+                Anamorphic encryption promises to end the crypto wars by using ciphertexts as steganographic vessels. 
+                However, that promise falls short once a dictator gets to <em>choose</em> the encryption scheme adversarially.
             <p>
                 <a href="https://eprint.iacr.org/2025/305" target="_blank">
                     eprint
@@ -87,15 +86,15 @@
                 </a> -->
             </p>
 
-            <div id="slides-preview" style="margin-top:16px;"></div>
+            <div class="slides-preview" style="margin-top:16px;"></div>
         </div>
 
         <div class="box">
 
             <div class="label">Strong secret sharing with snitching (CRYPTO'25)</div>
-            Secret sharing with snitching ensured security under full corruption,
+            Secret sharing with snitching guaranteed security under full corruption by 
             using blockchain smart contracts to enforce honest behavior. 
-            But what if the adversary also sets up smart contracts of their own?
+            But what if the adversary starts setting up smart contracts of their own?
 
             <p>
                 <a href="https://eprint.iacr.org/2025/1119" target="_blank">
@@ -107,16 +106,16 @@
                 </a>
             </p>
 
-            <div id="slides-preview" style="margin-top:16px;"></div>
+            <div class="slides-preview" style="margin-top:16px;"></div>
         </div>
 
         <div class="box">
 
             <div class="label">Secret sharing with snitching (CCS'24)</div>
-            It feels like obtaining secret sharing under full corruption is a hopeless endeavor.
-            In this paper we show that it's actually possible, if the adversary is fragmented and might 
-            consist of multiple factions that might be mutually adversarial. 
-            As for blockchain application, this leads to a new way of MEV prevention.
+            Achieving secret sharing under full corruption usually feels like a hopeless endeavor.
+            In this paper, we show it's actually possible if the adversary is fragmented into 
+            multiple, mutually hostile factions. 
+            As a practical bonus for blockchains, this opens up a new way to prevent MEV.
 
             <p>
                 <a href="https://eprint.iacr.org/2024/1610" target="_blank">
@@ -132,7 +131,7 @@
                 </a>
             </p>             
 
-            <div id="slides-preview" style="margin-top:16px;"></div>
+            <div class="slides-preview" style="margin-top:16px;"></div>
         </div>
 
         <div class="footer">
